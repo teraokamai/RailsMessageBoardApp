@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%= csrf_meta_tags %> 
+    <%= csp_meta_tag %>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+    <%= stylesheet_link_tag 'board_messages', media: 'all', 'data-turbolinks-track': 'reload' %> 
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>Board Messages</title>
+  </head>
+  <body class="container">
+    <%= yield %>
+    <div class="mt-5 text-center small text-secondary border-top border-secondary">
+      2020 MAI-TERAOKA
+    </div>
+  </body>
+</html>
